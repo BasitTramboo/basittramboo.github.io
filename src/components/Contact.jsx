@@ -10,15 +10,15 @@ function Contact() {
 
       <ul className="contact-list">
         <li>
-          📧 Email: <a href="mailto:youremail@example.com">youremail@example.com</a>
+          Email: <a href="mailto:tramboo.basit@gmail.com">tramboo.basit@gmail.com</a>
         </li>
         <li>
-          🔗 LinkedIn: <a href="https://www.linkedin.com/in/basittramboo/" target="_blank" rel="noreferrer">
+          LinkedIn: <a href="https://www.linkedin.com/in/basittramboo/" target="_blank" rel="noreferrer">
             linkedin.com/in/basittramboo
           </a>
         </li>
         <li>
-          💻 GitHub: <a href="https://github.com/BasitTramboo" target="_blank" rel="noreferrer">
+          GitHub: <a href="https://github.com/BasitTramboo" target="_blank" rel="noreferrer">
             github.com/BasitTramboo
           </a>
         </li>

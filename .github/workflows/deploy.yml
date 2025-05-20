@@ -24,11 +24,13 @@ jobs:
       - name: Build app
         run: npm run build
 
-      - name: Configure Git identity and remote
+      - name: Configure Git identity
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
 
       - name: Deploy to GitHub Pages
-        run: npx gh-pages -d dist
+        env:
+          GH_TOKEN: ${{ secrets.PERSONAL_GH_TOKEN }}
+        run: |
+          npx gh-pages -d dist -r https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}

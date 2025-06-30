@@ -10,7 +10,7 @@ function Contact() {
 
       <ul className="contact-list">
         <li>
-          Email: <a href="mailto:tramboo.basit@gmail.com">tramboo.basit@gmail.com</a>
+          Email: <a href="mailto:basit.tramboo@gmail.com">basit.tramboo@gmail.com</a>
         </li>
         <li>
           LinkedIn: <a href="https://www.linkedin.com/in/basittramboo/" target="_blank" rel="noreferrer">

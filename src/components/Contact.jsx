@@ -1,30 +1,57 @@
+import FadeIn from './FadeIn';
+import SectionHeading from './SectionHeading';
+
+const links = [
+  {
+    label: 'Email',
+    value: 'basit.tramboo@gmail.com',
+    href: 'mailto:basit.tramboo@gmail.com',
+    external: false,
+  },
+  {
+    label: 'LinkedIn',
+    value: 'linkedin.com/in/basittramboo',
+    href: 'https://www.linkedin.com/in/basittramboo/',
+    external: true,
+  },
+  {
+    label: 'GitHub',
+    value: 'github.com/BasitTramboo',
+    href: 'https://github.com/BasitTramboo',
+    external: true,
+  },
+];
+
 function Contact() {
   return (
-    <section id="contact">
-      <h2>Contact</h2>
+    <section id="contact" className="section">
+      <div className="section-inner">
+        <FadeIn>
+          <SectionHeading
+            label="Connect"
+            title="Let's talk."
+            subtitle="Open to conversations about engineering, cloud architecture, and collaboration."
+          />
+        </FadeIn>
 
-      <p>
-        I'm open to connecting about software development, cloud architecture, or collaboration opportunities.
-        Reach out via email or LinkedIn.
-      </p>
-
-      <ul className="contact-list">
-        <li>
-          Email: <a href="mailto:basit.tramboo@gmail.com">basit.tramboo@gmail.com</a>
-        </li>
-        <li>
-          LinkedIn:{' '}
-          <a href="https://www.linkedin.com/in/basittramboo/" target="_blank" rel="noreferrer">
-            linkedin.com/in/basittramboo
-          </a>
-        </li>
-        <li>
-          GitHub:{' '}
-          <a href="https://github.com/BasitTramboo" target="_blank" rel="noreferrer">
-            github.com/BasitTramboo
-          </a>
-        </li>
-      </ul>
+        <FadeIn delay={80}>
+          <div className="contact-links liquid-glass">
+            <div className="liquid-glass-content">
+              {links.map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  className="contact-link"
+                  {...(link.external ? { target: '_blank', rel: 'noreferrer' } : {})}
+                >
+                  <span className="contact-link-label">{link.label}</span>
+                  <span className="contact-link-value">{link.value}</span>
+                </a>
+              ))}
+            </div>
+          </div>
+        </FadeIn>
+      </div>
     </section>
   );
 }

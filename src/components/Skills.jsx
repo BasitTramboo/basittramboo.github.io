@@ -9,13 +9,16 @@ function Skills() {
           <ul>
             <li>Java</li>
             <li>JavaScript</li>
+            <li>TypeScript</li>
             <li>Python</li>
+            <li>Golang</li>
           </ul>
         </div>
 
         <div>
           <h3>Frameworks & Libraries</h3>
           <ul>
+            <li>React</li>
             <li>React Native</li>
             <li>Node.js</li>
             <li>Express.js</li>
@@ -30,6 +33,7 @@ function Skills() {
             <li>PostgreSQL</li>
             <li>MongoDB</li>
             <li>Firebase</li>
+            <li>DynamoDB</li>
           </ul>
         </div>
 
@@ -59,11 +63,12 @@ function Skills() {
         <div>
           <h3>Other</h3>
           <ul>
-            <li>Agile</li>
+            <li>Agile / Scrum</li>
             <li>TDD</li>
             <li>REST APIs</li>
             <li>OAuth / JWT</li>
             <li>Microservices</li>
+            <li>Generative AI / RAG</li>
           </ul>
         </div>
       </div>

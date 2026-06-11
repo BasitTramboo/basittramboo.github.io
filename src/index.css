@@ -1,5 +1,5 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
   line-height: 1.6;
   font-weight: 400;
   color: #212121;
@@ -41,8 +41,74 @@ h1, h2, h3 {
   line-height: 1.2;
 }
 
+h1 {
+  font-size: 2.75rem;
+}
+
 h2 {
   font-size: 2rem;
+}
+
+/* Hero Section */
+.hero {
+  padding: 2rem 0 0;
+  text-align: center;
+}
+
+.hero + section {
+  padding-top: 1rem;
+}
+
+.hero h1 {
+  margin-bottom: 0.5rem;
+}
+
+.hero-tagline {
+  font-size: 1.15rem;
+  color: #555;
+  max-width: 36rem;
+  margin: 0 auto;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 0.6rem 1.25rem;
+  border-radius: 6px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.hero-btn:hover {
+  text-decoration: none;
+}
+
+.hero-btn-primary {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.hero-btn-primary:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.hero-btn-secondary {
+  background-color: transparent;
+  color: #1a1a1a;
+  border: 1px solid #ccc;
+}
+
+.hero-btn-secondary:hover {
+  background-color: #f4f4f4;
+  color: #1a1a1a;
 }
 
 p {
@@ -113,6 +179,12 @@ button:hover {
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.project:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
 }
 
 .project h3 {
@@ -216,6 +288,8 @@ button:hover {
 
 .resume-button:hover {
   background-color: #0f5ec2;
+  text-decoration: none;
+  color: #fff;
 }
 
 /* Contact Section */
@@ -255,8 +329,24 @@ button:hover {
     grid-template-columns: 1fr;
   }
 
+  h1 {
+    font-size: 2rem;
+  }
+
   h2 {
     font-size: 1.5rem;
+  }
+
+  .hero {
+    padding: 1.5rem 0 0;
+  }
+
+  .hero + section {
+    padding-top: 0.75rem;
+  }
+
+  .hero-tagline {
+    font-size: 1rem;
   }
 
   p {
@@ -298,4 +388,33 @@ button:hover {
 
 .site-nav li a:hover {
   color: #1a73e8;
+}
+
+.site-nav li a.active {
+  color: #1a73e8;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 2000;
+  padding: 0.5rem 1rem;
+  background: #1a1a1a;
+  color: #fff;
+  border-radius: 0 0 6px 6px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: 2px solid #1a73e8;
+  outline-offset: 2px;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #1a73e8;
+  outline-offset: 2px;
 }

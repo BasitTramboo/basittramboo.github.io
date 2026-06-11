@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <footer className="site-footer">
-      © 2025 Basit Tramboo. All rights reserved.
+      © 2026 Basit Tramboo. All rights reserved.
     </footer>
   );
 }

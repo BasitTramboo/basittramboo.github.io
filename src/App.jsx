@@ -10,12 +10,12 @@ import Nav from './components/Nav'
 
 function App() {
   return (
-    <>
+    <div className="app-shell">
       <a href="#about" className="skip-link">
         Skip to content
       </a>
-      <div className="main-container">
-        <Nav />
+      <Nav />
+      <main>
         <Hero />
         <About />
         <Skills />
@@ -23,9 +23,9 @@ function App() {
         <Experience />
         <Education />
         <Contact />
-        <Footer />
-      </div>
-    </>
+      </main>
+      <Footer />
+    </div>
   )
 }
 
